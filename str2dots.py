@@ -40,9 +40,10 @@ with open(folder_path+'0.txt','w+') as file:
 
 for i in range(len(contours)):
 
-    with open(folder_path+'{}.txt'.format(i+1),'w+') as file:
+    with open(folder_path+'{}.csv'.format(i+1),'w+') as file:
         for dot in contours[i]:
-            file.write('{}\0'.format(dot[0][0]))
+            file.write('{},'.format(dot[0][0]))
+
             file.write('{}\n'.format(dot[0][1]))
 
 print ("Finished")
