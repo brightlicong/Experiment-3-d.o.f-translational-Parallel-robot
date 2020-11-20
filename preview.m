@@ -1,7 +1,7 @@
 function preview(lines)
 %preview 绘制预习的结果
 global para;
-a = 0.001*para.side;
+a = para.side;
 figure
 hold on
 %%画出范围
@@ -12,9 +12,9 @@ plot3(edge_x,edge_y,edge_z);
 %%画出预期诡计
 for i = 1:size(lines,1)
     line = lines{i};
-    x = line(:,1)*0.001;
-    y = line(:,2)*0.001;
-    z = ones(size(line,1))*0.3;
+    x = line(:,1)*100;
+    y = line(:,2)*100;
+    z = ones(size(line,1))*0.3*100;
     plot3(x,y,z);
 end
 hold off

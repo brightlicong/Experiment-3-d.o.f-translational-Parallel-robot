@@ -8,12 +8,12 @@ para = get_parameters();
 global r;
 r = getRobot();
 %% 导入总体信息
-lines = read_lines("聚");
-preview(lines)
+lines = read_lines("FZ");
+%preview(lines)
 %% 获取加工过程中的经历过的位姿
 Ts = getTs(lines);
-previewRoutine(Ts);
+%previewRoutine(Ts);
 %% 计算脉冲
 Pulse_matrix = getPulseMatrix(Ts);
-xlswrite("pulse.xls",Pulse_matrix);
+xlswrite("FZ.xls",Pulse_matrix);
 toc

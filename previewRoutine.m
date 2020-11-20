@@ -1,7 +1,7 @@
 function previewRoutine(Ts)
 %Ô¤ÀÀµ¶Â·
 global para;
-a = 0.001*para.side;
+a = para.side;
 figure
 hold on
 %%»­³ö·¶Î§
@@ -17,7 +17,7 @@ for i = 1:size(Ts,2)-1
     y2 = Ts{i+1}(2,4);
     z1 = Ts{i}(3,4);
     z2 = Ts{i+1}(3,4);
-    plot3([x1,x2]*0.001,[y1,y2]*0.001,[z1,z2]*0.001);
+    plot3([x1,x2],[y1,y2],[z1,z2]);
 end
 hold off
 end

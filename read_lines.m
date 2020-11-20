@@ -18,8 +18,8 @@ for i= 1:img_num
     file = importdata (file_name);
     file = [file;file(1,:)];
     lines{i} = file;
-    lines{i}(:,1) = lines{i}(:,1)*x_zoom - xx/2;
-    lines{i}(:,2) = lines{i}(:,2)*y_zoom -yy/2;
+    lines{i}(:,1) = 0.1*(lines{i}(:,1)*x_zoom - xx/2);
+    lines{i}(:,2) = 0.1*(lines{i}(:,2)*y_zoom -yy/2);
     
 end
 
