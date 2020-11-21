@@ -5,10 +5,10 @@ a = para.side;
 figure
 hold on
 %%»­³ö·¶Î§
-edge_x = [-0.5*a,0.5*a,0,-0.5*a];
-edge_y = [-sqrt(3)/6*a,-sqrt(3)/6*a,sqrt(3)/3*a,-sqrt(3)/6*a];
-edge_z = [0 0 0 0];
-plot3(edge_x,edge_y,edge_z);
+% edge_x = [-0.5*a,0.5*a,0,-0.5*a];
+% edge_y = [-sqrt(3)/6*a,-sqrt(3)/6*a,sqrt(3)/3*a,-sqrt(3)/6*a];
+% edge_z = [0 0 0 0];
+% plot3(edge_x,edge_y,edge_z);
 %%»­³öÔ¤ÆÚ¹ì¼£
 for i = 1:size(Ts,2)-1
     x1 = Ts{i}(1,4);
